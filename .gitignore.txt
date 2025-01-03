@@ -1,0 +1,77 @@
+# Fichiers spécifiques à Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.whl
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Fichiers d'environnement virtuel
+env/
+venv/
+ENV/
+.venv/
+.env/
+.Python
+
+# Fichiers de configuration et variables d'environnement
+*.env
+*.ini
+*.cfg
+*.sqlite3
+
+# Clés de migration de Django
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.seed
+*.pid
+*.swp
+
+# Media et fichiers statiques
+/media/
+*/media/
+staticfiles/
+*/staticfiles/
+*.static/
+
+# Tests
+coverage/
+.coverage
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Fichiers de l'éditeur de texte
+.idea/
+.vscode/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers du système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configurations locales spécifiques
+*.bak
+*.tmp
+*.temp
+*.log
+
+# Extensions spécifiques (si applicables)
+*.pem
+*.key
+*.crt
