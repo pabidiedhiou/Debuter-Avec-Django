@@ -1,0 +1,16 @@
+{% extends "listings/base.html" %} {% block content %}
+<h2>{{groupe.nom}}</h2>
+<ul>
+  <li>Genre : {{ groupe.get_genre_display }}</li>
+
+  <li>Année de formation : {{ groupe.annee_formation }}</li>
+
+  <li>Actif : {{ groupe.actif|yesno }}</li>
+
+  <li>{{ groupe.page_officielle}}</li>
+</ul>
+<p>{{ groupe.biographie }}</p>
+<a href="{% url "modifie-groupe" groupe.id%}">Modifier ce groupe</a>
+--||--<a href="{% url "supprime-groupe" groupe.id%}"> Supprimer ce groupe</a>
+<p><a href="{% url "groupes-list" %}">Liste des groupes</a></p>
+{% endblock %}

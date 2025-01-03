@@ -1,0 +1,14 @@
+{% extends "listings/base.html" %} {% block content %}
+
+<h1>Groupes</h1>
+<a href="{% url "creer-groupe" %}">Créer un nouveau  groupe</a>
+<ul>
+  {% for i in groupes %}
+  <li>
+    <a href="{% url "groupe-detail" i.id %}">{{i.nom}}</a>
+    -<a href="{% url "modifie-groupe" i.id%}">[Editer]</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

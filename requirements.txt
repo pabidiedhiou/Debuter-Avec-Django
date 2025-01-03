@@ -1,0 +1,10 @@
+asgiref==3.6.0
+decouple==0.0.7
+Django==4.1.7
+numpy==1.25.1
+Pillow==10.0.0
+python-decouple==3.7
+six==1.16.0
+sqlparse==0.4.3
+tzdata==2022.7
+wxPython==4.2.1
