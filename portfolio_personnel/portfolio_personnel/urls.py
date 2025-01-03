@@ -18,6 +18,7 @@ from django.urls import path
 from listings import views
 
 urlpatterns = [
+    path('', views.groupes_list, name='groupes-list'),
     path('groupes/', views.groupes_list, name='groupes-list'),
     path('groupes/<int:groupe_id>/', views.groupe_detail, name='groupe-detail'),
     path('groupes/add/', views.creer_groupe, name="creer-groupe"),
